@@ -22,7 +22,7 @@ const App = () => {
      const newData = data.filter((value)=> value.id !== id)
      setData(newData)
   }
-  const 
+
   return <main>
           <h1>Our Tours</h1>
          <div className="tours">
@@ -36,7 +36,7 @@ const App = () => {
                       <div className="tour-info">
                         <div>{name}</div>
                         <p>
-                           <button className="info-btn" onClick={()=>seToggle(!toggle)}>{toggle ? <Read info={info} read='Read More..'/>:}</button>
+                           <button className="info-btn" onClick={()=>seToggle(!toggle)}>{toggle ? <Read info={info} read='Read More..'/>: <Less info={info} read='less'/>}</button>
                         </p>
                         <button className="btn" onClick={()=>handlerFunction(id)}>Not interseted</button>
                       </div>
